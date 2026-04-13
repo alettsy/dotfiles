@@ -1,0 +1,47 @@
+{
+  "ui_font_family": "Fira Code",
+  "project_panel": {
+    "diagnostic_badges": true,
+    "indent_size": 20.0,
+    "entry_spacing": "standard"
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+  "agent_ui_font_size": 12.0,
+  "buffer_line_height": "standard",
+  "buffer_font_family": "Fira Code",
+  "base_keymap": "JetBrains",
+  "icon_theme": "Zed (Default)",
+  "ui_font_size": 14.0,
+  "buffer_font_size": 12.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha",
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "languages": {
+    "Dart": {
+      "format_on_save": "on",
+      "code_actions_on_format": {
+        "source.fixAll": true,
+        "source.organizeImports": true,
+      },
+    },
+  },
+  "lsp": {
+    "dart": {
+      "binary": {
+        "path": "C:/dev/flutter/bin/dart.bat",
+        "arguments": ["language-server", "--protocol=lsp"],
+      },
+    },
+  },
+}

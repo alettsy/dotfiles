@@ -1,0 +1,59 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift shift": "file_finder::Toggle",
+      "ctrl ctrl": "command_palette::Toggle",
+      "alt-t": "terminal_panel::Toggle",
+      "alt-r": "task::Rerun",
+      "alt-c": "pane::CloseAllItems",
+      "alt-g": "git_panel::ToggleFocus",
+      "alt-f": "file_finder::Toggle",
+      "alt-e": "project_panel::ToggleFocus",
+      "alt-o": "outline_panel::ToggleFocus",
+      "alt-n": "project_panel::NewFile",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "alt-a": "project_panel::CollapseAllEntries",
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "unbind": {
+      "ctrl-left": "project_panel::CollapseAllEntries",
+    },
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "alt-c": "search::ToggleCaseSensitive"
+    }
+  },
+  {
+    "context": "KeymapEditor",
+    "unbind": {
+      "alt-c": "keymap_editor::ToggleConflictFilter"
+    }
+  },
+  {
+    "context": "BufferSearchBar || ProjectSearchBar",
+    "unbind": {
+      "alt-c": "search::ToggleCaseSensitive"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-y": "editor::DeleteLine"
+    }
+  }
+]
