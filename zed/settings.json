@@ -1,7 +1,12 @@
 {
+  "prettier": {
+    "allowed": true,
+  },
+  "format_on_save": "on",
+  "unnecessary_code_fade": 0.3,
   "disable_ai": true,
   "edit_predictions": {
-    "allow_data_collection": "no"
+    "allow_data_collection": "no",
   },
   "buffer_font_weight": 400.0,
   "terminal": {
@@ -59,17 +64,29 @@
   "languages": {
     "Dart": {
       "format_on_save": "on",
+      "formatter": "language_server",
       "code_actions_on_format": {
         "source.fixAll": true,
         "source.organizeImports": true,
       },
     },
+    "Rust": {
+      "format_on_save": "on",
+      "formatter": "language_server",
+    },
   },
   "lsp": {
     "dart": {
       "binary": {
-        "path": "C:/dev/flutter/bin/dart.bat",
+        "path": "/usr/custom/flutter/bin/dart",
         "arguments": ["language-server", "--protocol=lsp"],
+      },
+    },
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy",
+        },
       },
     },
   },
